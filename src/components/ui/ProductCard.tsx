@@ -7,7 +7,7 @@ import Link from "next/link";
 const ProductCard = ({ cloth }: { cloth: TCloth }) => {
   const discountedPrice = (cloth.price - cloth.price * (cloth.discount / 100)).toFixed(2);
   return (
-    <Link href={`/cloth/${cloth?._id}`}>
+    <Link href={`/cloths/${cloth?._id}`}>
       <Box
         sx={{
           borderRadius: "8px",

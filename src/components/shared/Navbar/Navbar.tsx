@@ -49,7 +49,7 @@ const Navbar = () => {
             flash-sale
           </Link>
           <Link
-            href="/products"
+            href="/cloths"
             underline="hover"
             sx={{
               fontSize: "18px",
@@ -61,7 +61,7 @@ const Navbar = () => {
               },
             }}
           >
-            products
+            cloths
           </Link>
           <Link
             href="dashboard"
@@ -102,7 +102,7 @@ const Navbar = () => {
                 flash-sale
               </Link>
               <Link
-                href="/products"
+                href="/cloths"
                 underline="hover"
                 sx={{
                   fontSize: "18px",
@@ -114,7 +114,7 @@ const Navbar = () => {
                   },
                 }}
               >
-                products
+                cloths
               </Link>
               <Link
                 href="/dashboard"

@@ -3,7 +3,7 @@ import Container from "@/components/ui/Container";
 import ProductCard from "@/components/ui/ProductCard";
 import { TCloth } from "@/types";
 
-const ClothPage = async ({ searchParams }: { searchParams: { brand: string } }) => {
+const ClothsPage = async ({ searchParams }: { searchParams: { brand: string } }) => {
   let brand = "";
   let data = [];
 
@@ -18,13 +18,11 @@ const ClothPage = async ({ searchParams }: { searchParams: { brand: string } }) 
       cache: "no-store",
     });
     data = await res.json();
-    brand = "All";
   }
 
   return (
-    <div className="mt-32">
+    <div>
       <Container>
-        <h1 className="text-2xl font-bold mb-4">Our Collection Of {brand} Laptops</h1>
         <p className=" mb-14">
           Embark on a journey of limitless possibilities with LapLux expansive collection of
           laptops, meticulously curated to cater to every need and preference.
@@ -48,4 +46,4 @@ const ClothPage = async ({ searchParams }: { searchParams: { brand: string } }) 
   );
 };
 
-export default ClothPage;
+export default ClothsPage;
