@@ -43,13 +43,9 @@ const ProductCard = ({ cloth }: { cloth: TCloth }) => {
           <h2 className="text-left  mb-2">{cloth?.name}</h2>
           <Box className="flex justify-between items-center text-sm">
             <Box>
-              <span className="text-xl font-semebold">৳</span>
-              <del className="text-slate-500">{cloth?.price}</del>
-              {""}
-              <span className="text-gray-900 font-semibold">
-                <span className="text-xl  ">৳</span>
-                {discountedPrice}
-              </span>
+              <del className="text-slate-500 mr-3">${cloth?.price}</del>
+
+              <span className="text-gray-900 font-semibold">${discountedPrice}</span>
             </Box>
             <CirclePlus className="font-light h-5 w-5 cursor-pointer" />
           </Box>

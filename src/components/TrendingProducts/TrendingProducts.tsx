@@ -22,6 +22,7 @@ const TrendingProducts = async () => {
   return (
     <Box
       sx={{
+        paddingBottom: "60px",
         background:
           "linear-gradient(90deg, rgba(10,207,255,0.6241684173669468) 0%, rgba(181,179,181,0.9406950280112045) 59%, rgba(255,252,255,1) 100%)",
       }}
@@ -39,8 +40,8 @@ const TrendingProducts = async () => {
           }}
         >
           <Box>Best selling!</Box>
-          <Box>Best selling!!</Box>
-          <Box> Best selling!!!</Box>
+          <Box>Good Review!!</Box>
+          <Box> Rejonable Price!!!</Box>
         </Box>
         <Box>
           <h2 className="text-slate-900 md:w-2/3 mx-auto mt-7 font-semibold text-xl underline  text-center">
