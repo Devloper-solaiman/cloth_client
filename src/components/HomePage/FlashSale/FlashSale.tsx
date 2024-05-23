@@ -7,7 +7,7 @@ import ProductCard from "@/components/ui/ProductCard";
 import { Box } from "@mui/material";
 
 const FlashSale = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/cloth", {
+  const res = await fetch("https://cloth-server-weld.vercel.app/api/v1/cloth", {
     next: {
       revalidate: 30,
     },

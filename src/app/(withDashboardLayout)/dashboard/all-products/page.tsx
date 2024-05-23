@@ -8,9 +8,10 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { TCloth } from "@/types";
+import { Box } from "@mui/material";
 
 const AllProductPage = async () => {
-  const res = await fetch(`http://localhost:5000/api/v1/cloth`, {
+  const res = await fetch(`https://cloth-server-weld.vercel.app/api/v1/cloth`, {
     cache: "no-store",
   });
 
@@ -22,7 +23,7 @@ const AllProductPage = async () => {
   };
 
   return (
-    <div>
+    <Box>
       <Table>
         <TableCaption>A list of your recent invoices.</TableCaption>
         <TableHeader>
@@ -48,7 +49,7 @@ const AllProductPage = async () => {
           ))}
         </TableBody>
       </Table>
-    </div>
+    </Box>
   );
 };
 

@@ -15,7 +15,7 @@ const MenuItem = [
 
 const Sidebar = ({ slider, setSlider }: TSlider) => {
   return (
-    <Box className=" bg-slate-900 text-white h-screen pt-10">
+    <Box className=" bg-slate-900 text-white h-full pt-10">
       <Box className="lg:hidden">
         {slider ? (
           <Box className="flex justify-center items-end flex-col px-5">

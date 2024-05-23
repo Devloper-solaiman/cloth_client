@@ -1,11 +1,10 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import Image from "next/image";
-import Link from "next/link";
 import facebookIcon from "@/assets/social/facebook.png";
 import instagramIcon from "@/assets/social/instagram.png";
 import twitterIcon from "@/assets/social/twitter.png";
 import linkedIcon from "@/assets/social/linkedin.png";
-import logoIcon from "@/assets/image/rimjhim.png.png";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -23,7 +22,7 @@ const Footer = () => {
               },
             }}
           >
-            Shopflash-sale{" "}
+            <Link href="/flash-sale"> Shop flash-sale</Link>
           </Typography>
           <Typography
             sx={{
@@ -36,7 +35,7 @@ const Footer = () => {
               },
             }}
           >
-            products
+            <Link href="/cloths"> products</Link>
           </Typography>
           <Typography
             sx={{
@@ -49,7 +48,7 @@ const Footer = () => {
               },
             }}
           >
-            dashboard
+            <Link href="/dashboard"> dashboard</Link>
           </Typography>
         </Stack>
 

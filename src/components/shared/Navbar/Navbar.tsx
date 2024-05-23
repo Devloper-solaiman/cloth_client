@@ -24,7 +24,7 @@ const Navbar = () => {
               cursor: "pointer",
             }}
           >
-            রিমঝিম
+            Rim JHIM
           </Link>
           <Link href="/">
             <Image src={logoImg} height={40} width={40} alt="logo Image" />
